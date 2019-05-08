@@ -1,13 +1,19 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import "../node_modules/materialize-css/dist/css/materialize.css";
+import "../node_modules/materialize-css/dist/js/materialize.js";
+import Planner from "./Planner";
+import Navbar from "./Navbar";
+import { HashRouter, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <div className="App-header">
-        Food Planner
-      </div>
-    </div>
+    <HashRouter>
+      <React.Fragment>
+        <Navbar />
+        <Planner />
+      </React.Fragment>
+    </HashRouter>
   );
 }
 
