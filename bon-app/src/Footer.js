@@ -31,7 +31,7 @@ const Footer = () => {
       <div className="footer-copyright black">
         <div className="container">
           <img src="aedificatorum-logo.png" className="logo" alt="logo" />
-          Build by Aedificatorum
+          <span className="footer-built-by">Built by Aedificatorum</span>
         </div>
       </div>
     </footer>
