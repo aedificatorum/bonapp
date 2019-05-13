@@ -1,4 +1,29 @@
+body {
+  margin:0px auto;
+}
+
+#root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
 .logo {
   width: 1.5%;
   height: auto;
+}
+
+.footer-built-by {
+  padding-left: 6px;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 3.1%;
+    height: auto;
+  }
 }
