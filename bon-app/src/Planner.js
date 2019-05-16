@@ -1,15 +1,13 @@
 import React from "react";
 
 const Planner = () => {
-  const [value, setValue] = React.useState(
-    localStorage.getItem('myValueInLocalStorage') || ''
+  const [meal, setMeal] = React.useState(
+    localStorage.getItem('meal') || ''
   );
 
   React.useEffect(() => {
-    localStorage.setItem('myValueInLocalStorage', value);
-  }, [value]);
-
-  const onChange = event => setValue(event.target.value);
+    localStorage.setItem('meal', meal);
+  }, [meal]);
 
   return (
     <div className="container">
@@ -17,7 +15,7 @@ const Planner = () => {
         <form class="col s12">
           <div class="row">
             <div class="input-field col s12 m6">
-              <textarea id="mondayLunch" class="materialize-textarea" value={value} onChange={onChange}/>
+              <textarea id="mondayLunch" class="materialize-textarea" value={meal} onChange={e => (setMeal(e.target.value))} />
               <label for="mondayLunch">Monday Lunch</label>
             </div>
             <div class="input-field col s12 m6">
