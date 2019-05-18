@@ -19,8 +19,8 @@ const Planner = () => {
               <label for="mondayLunch">Monday Lunch</label>
             </div>
             <div class="input-field col s12 m6">
-              <textarea id="mondayDiner" class="materialize-textarea" />
-              <label for="mondayDiner">Monday Diner</label>
+              <textarea id="mondayDinner" class="materialize-textarea" />
+              <label for="mondayDinner">Monday Dinner</label>
             </div>
           </div>
           <div class="row">
@@ -29,8 +29,8 @@ const Planner = () => {
               <label for="tuesdayLunch">Tuesday Lunch</label>
             </div>
             <div class="input-field col s12 m6">
-              <textarea id="tuesdayDiner" class="materialize-textarea" />
-              <label for="tuesdayDiner">Tuesday Diner</label>
+              <textarea id="tuesdayDinner" class="materialize-textarea" />
+              <label for="tuesdayDinner">Tuesday Dinner</label>
             </div>
           </div>
         </form>
